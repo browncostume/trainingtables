@@ -1,15 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Forms and Tables</title>
 </head>
 
 <body>
-   <a href="table.html">Красива таблиця</a>
+    <h1><b>Наскільки ви роверист?</b></h1>
+    <p>Дане опитування призначено виключно для морального поглажування вашого роверового еґо та може бути використано проти вас та вашого ровера. </p>
+
+    <form action="https://formspree.io/browncostume@gmail.com" method="POST">
+
+        <label>Мене звати Веломаньяк, а вас?
+        <input type="text" name="cyclist-name"
+        placeholder="Як до вас звертатися?">
+        </label>
+        <figure>
+            <img src="cycles1.jpg" alt="музики на ровері" width=600 height=300>
+            <figcaption>"Поїхали!!!"</figcaption>
+        </figure>
+        <br>
+        <label>Скільки повних років вам виповнилося?
+        <input type="number" name="cyclist-age"
+        placeholder="Ваш Вік" min="0" max="108">
+        </label>
+        <br> Ваша стать?
+        <br>
+        <label><input type="radio" name="gender" value="male">Чоловік</label>
+        <label><input type="radio" name="gender" value="female">Жінка</label>
+        <label><input type="radio" name="gender" value="other">Інша</label>
+        <label><input type="radio" name="gender" value="ameba" checked>Не визначився</label><br>
+
+        <br>Як розприділяєте своє пересування по життєвій дорозі? (приблизно у %)
+        <br>
+        <label>Пішки
+        <input type="number" name="walking"
+        placeholder="%%" min="0" max="100">
+        </label>
+        <label>Ровером
+        <input type="number" name="cycling"
+        placeholder="%%" min="0" max="100">
+        </label>
+        <label>Власним авто
+        <input type="number" name="auto"
+        placeholder="%%" min="0" max="100">
+        </label>
+        <label>Іншим транспортом, в т.ч. гужовим та річковим
+        <input type="number" name="other"
+        placeholder="%%" min="0" max="100">
+        </label>
+        <figure>
+            <img src="cycle_auto.jpg" alt="на велотренажері на машині на ТурдеФранс" width=400 height=350>
+            <figcaption>Коли і їхати хочеться і з місця зрушити не можна</figcaption>
+        </figure>
+        <br>
+
+
+        <label>Скільки днів в році ви катаєте?</label><br>
+        <label>    <input type="radio" name="rides_per_year" value="0">0        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="1-5">1-5        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="6-20">6-20        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="21-60">21-60        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="61-180">61-180        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="181-365">181-365        </label><br>
+        <label>    <input type="radio" name="rides_per_year" value="call_911">І навіть у сні        </label><br>
+        <br>
+        <label>Скільки кілометрів намотали за останні 365 днів?</label><br>
+        <label>    <input type="radio" name="km_per_year" value="0">0        </label><br>
+        <label>    <input type="radio" name="km_per_year" value="1-50">1-50        </label><br>
+        <label>    <input type="radio" name="km_per_year" value="51-200">51-200        </label><br>
+        <label>    <input type="radio" name="km_per_year" value="201-500">201-500        </label><br>
+        <label>    <input type="radio" name="km_per_year" value="501-1000">501-1000       </label><br>
+        <label>    <input type="radio" name="km_per_year" value="1001-10000">1001-10000        </label><br>
+        <label>    <input type="radio" name="km_per_year" value="cycle_psycho">Кріс Фрум, ти?        </label><br>
+        <br>
+        <figure>
+            <img src="cyclist_legs_pawel_poljanski.jpg" alt="Pawel Poljanski legs on TDF2017">
+            <figcaption>Коли без тренувань вирішив поїхати до дівчини. А дівчина в Києві.</figcaption>
+        </figure>
+
+
+        <br>
+        <label>Де, зазвичай, ви катаєте ровером?
+        <select name="cycling_area">
+    <option value="Львів-Центр">Львів-Центр</option>
+    <option value="Львів-Сихівський р-н">Львів-Сихівський р-н</option>
+    <option value="Львів-Шевченківський р-н">Львів-Шевченківський р-н</option>
+    <option value="Львів-Залізничний р-н">Львів-Залізничний р-н</option>
+    <option value="Передмістя Львова">Передмістя Львова</option>
+    <option value="Львівська область">Львівська область</option>
+    <option value="Україна-Захід">Україна-Захід</option>
+    <option value="Україна-від Сяну до Дону">Україна-від Сяну до Дону</option>
+    <option value="Я - роверист світу">Я - роверист світу</option>
+      </select>
+      </label>
+
+        <br>
+        <label>Скільки у вас було роверів за все життя?
+        <input type="number" name="cycles_per_life"
+        placeholder="Після гномика" min="0" max="1000">
+        </label>
+        <br>
+        <label>Скільки у вас максимально було роверів одночасно?
+        <input type="number" name="cycles_max"
+        placeholder="В мене 3" min="0" max="1000">
+        </label>
+        <br>
+        <label>Скільки у вас роверів зараз?
+        <input type="number" name="cycles_per_life"
+        placeholder="Ну хоч 1 є?" min="0" max="100">
+        </label>
+        <figure>
+            <img src="cyclist_garage1.jpg" alt="гараж веломаньяка">
+        </figure>
+
+        <p>І які то ровери?<p></p><br>
+            <input type="checkbox" name="cycle1" value="MTB">"MTB"<br>
+            <input type="checkbox" name="cycle2" value="Road">"Road"<br>
+            <input type="checkbox" name="cycle3" value="AuchanBike">"AuchanBike(shame on you)"<br>
+            <input type="checkbox" name="cycle4" value="DownHill">"DownHill"<br>
+            <input type="checkbox" name="cycle6" value="BMX">"BMX"<br>
+            <input type="checkbox" name="cycle7" value="other">"Такого в переліку нема"<br>
+            <input type="checkbox" name="cycle8" value="dont_know">"Не розбираюся в тому"<br>
+    
+
+        <p> Змучилися? Ще трішки)</p>
+        <img src="just_a_little.jpg" alt="exhausted cyclist" width=500 height=360>
+        <br>
+
+        <p>І ще один клік (якщо не захочете написати мені іще чогось в полі для тексту) і можете побалувати себе чимось хорошим - сьогодні ви зробили добру справу незнайомцю</p>
+        <br>
+        <textarea name="textarea" cols="80" rows="12" placeholder="Опишіть свою найкрашу і найгіршу поїздку кількома словами, якщо ще маєте сили"></textarea>
+        <br>
+        <input type="email" name="_replyto"  placeholder="я ж захочу вам подякувати">
+        <br>
+        <input type="submit" value="Send">
+        <br>
+        <br>
+
+        <input type="reset" value="Я соромлюсь своїх відповідей">
+
+
+    </form>
+    <br>
+    <p> Ось і все - ви молодці. Дякую.</p>
+    <img src="cycle_beer.jpg" alt="beer on bike. cheers">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> І бережіть себе</p>
+    <img src="cycle_damage.jpg" alt="cycle damaged cyclist">
+
+
+    <a href="table.html">Красива таблиця</a>
 </body>
 
 </html>
